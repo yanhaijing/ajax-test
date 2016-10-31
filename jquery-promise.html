@@ -5,16 +5,17 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="jquery.js"></script>
-    <script src="ajax-jq.js"></script>
+    <script src="js/es6-promise.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/ajax-jq.js"></script>
     <script>
         ajax({
-            url: 'http://yanhaijing.com',
+            url: 'api.json',
             success: function (ret) {
                 console.log(typeof ret);
             }
         }).then(function (ret) {
-            console.log(ret.length);
+            console.log(ret.a);
         });
 
         console.log('end');

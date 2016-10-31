@@ -1,3 +1,5 @@
+ES6Promise.polyfill();
+
 function ajax(opt) {
     var success = opt.success || function () {};
 
