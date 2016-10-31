@@ -13,13 +13,26 @@
             url: 'api.json',
             async: false,
             success: function (ret) {
-                console.log(typeof ret);
+                console.log('200: ', typeof ret);
             }
         }).then(function (ret) {
-            console.log(ret.a);
+            console.log('200: ', ret.a);
         });
 
-        console.log('end');
+        console.log('200: ', 'end');
+    </script>
+    <script>
+        ajax({
+            url: '404',
+            async: false,
+            error: function (err) {
+                console.log('404: ', typeof err);
+            }
+        }).then(null, function (err) {
+            console.log('404: ', err);
+        });
+
+        console.log('404: ', 'end');
     </script>
 </body>
 </html>
