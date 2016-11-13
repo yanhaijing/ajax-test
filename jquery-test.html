@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jquery.js"></script>
+    <script>
+        $.ajax({
+            url: 'api.json'
+        }).then(function (res) {
+            console.log(res);
+        })
+    </script>
+</body>
+</html>
